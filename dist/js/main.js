@@ -19792,20 +19792,18 @@ var App = React.createClass({displayName: "App",
             React.createElement("div", null, 
                 React.createElement("div", {className: "off-canvas-wrapper"}, 
                     React.createElement("div", {className: "off-canvas-wrapper-inner", "data-off-canvas-wrapper": true}, 
-                        React.createElement("div", {className: "off-canvas position-left reveal-for-large", "data-off-canvas": true, "data-position": "left"}, 
-                            React.createElement("div", {className: "row columns"}, 
+                        React.createElement("div", {className: "off-canvas position-left reveal-for-large", id: "my-info", "data-off-canvas": true, "data-position": "left"}, 
+                            React.createElement("div", {className: "row column"}, 
                                 React.createElement("br", null), 
                                 React.createElement(AddNoteForm, null)
                             )
                         ), 
-
                         React.createElement("div", {className: "off-canvas-content", "data-off-canvas-content": true}, 
                             React.createElement(NoteList, {notes: this.state.notes})
                         )
                     )
                 )
             )
-
         )
     },
 
